@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .green {
+            color: green;
+        }
+        
+        
+        /* 
+            In der jeweiligen Aufgabe ist gegeben, welche Elemente selektiert werden sollen.
+            Im CSS ist dann jeweils nur die Farbe auf Gold zu setzen (es geht ja nur um die Selektoren!).
+            Fügen Sie ihre CSS-Codes unter der Aufgabe ein, und kommentieren Sie sie aus!         
+        */
+
+        /* AUFGABE 0: Selektieren Sie alle Elemente */
+        /* * { color: gold; } */
+
+        { color: gold; }  Alle Elemente der Farbe "Gold" selektiert  
+        
+
+
+
+        /* AUFGABE 1: 1>Paragraph 1 in der ersten Section */
+
+        #sec1 class.1 {color: gold;}   Mit #sec1 und class.1 wählen wir die Section 1 aus 
+
+
+
+
+        /* AUFGABE 2: selektiere 3>Paragraph Z */
+
+        #sec2 class.2 {color: gold;}   Mit #sec2 und class.2 wählen wir die Section 3 aus 
+       
+
+
+
+        /* AUFGABE 3: 2>Paragraph in erster und zweiter Section */
+       
+       #sec1 class.2
+       #sec2 class.2 {color: gold;}   Mit dem #sec... und class.... selektieren wir die Sectionen 1 und 2 aus 
+
+
+
+
+        /* AUFGABE 4: 3>Paragraph Z in der zweiten Section */
+
+
+         #sec2 class.2 {color: gold;}   Z in der zweiten Section ausgewählt 
+
+
+
+
+        /* AUFGABE 5: alle gruenen list items */
+
+
+        .green li {color: gold;}  Alle grünen list items ausgewält mit color gold
+
+
+
+
+       
+        /* AUFGABE 6: jeweils die ersten beiden list items */
+
+        ul li:nth-child (-n+2)  {color: gold;}   Der ul li:nth-child code ist selektiert die items die unselektiert sind...
+
+
+
+ 
+       
+        /* AUFGABE 7: jeweils die ersten beiden list items der blauen und gruenen section */
+
+
+        .blue li:nth-child (-n+2)
+        .green li:nth-child (-n+2)   {color: gold;}    Das gleiche Prinzip mit der Aufgabe 6 
+
+
+
+
+        
+        /* AUFGABE 8: Paragraphs in den ersten beiden Sections  */
+
+
+        #sec1  p,
+        #sec2  p,  {color: gold;}   Mit dem #sec... p die Sectionen ausgewählt
+
+
+    Manche Aufgaben mit der Hilfe von der Seite gemacht: https://flukeout.github.io/
+       
+       
+
+
+       
+    </style>
+</head>
+<body>
+    <section id="sec1" class="red">
+        <div>
+            <h2>Heading 1</h2>
+            <p class="class-1">
+                1>Paragraph 1
+            </p>
+            <p class="class-2">
+                2>Paragraph 2
+            </p>
+            <div>
+                <h3>List 1</h3>
+                <ul>
+                    <li>l1>List Item a</li>
+                    <li>l2>List Item b</li>
+                    <li>l3>List Item c</li>
+                </ul>
+                <p class="class-3">
+                    3>Paragraph 3
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="sec2" class="blue">
+        <div>
+            <h2>Heading 2</h2>
+            <p class="class-1" id="id1">
+                1>Paragraph X
+            </p>
+            <p class="class-2" id="id2">
+                2>Paragraph Y
+            </p>
+            <div id="id3">
+                <h3>List 2</h3>
+                <ul>
+                    <li>l1>List Item 1</li>
+                    <li>l2>List Item 2</li>
+                    <li>l3>List Item 3</li>
+                </ul>
+                <p class="class-2">
+                    3>Paragraph Z
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="green">
+        <div>
+            <h2>Heading 3</h2>
+            <p>
+                1>Paragraph u
+            </p>
+            <p>
+                2>Paragraph v
+            </p>
+            <div>
+                <h3>List 3</h3>
+                <ul>
+                    <li>l1>List Item X</li>
+                    <li>l2>List Item Y</li>
+                    <li>l3>List Item Z</li>
+                </ul>
+                <p>
+                    4>Paragraph w
+                </p>
+            </div>            
+        </div>
+    </section>
+</body>
+</html>

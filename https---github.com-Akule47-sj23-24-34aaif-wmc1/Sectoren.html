@@ -23,31 +23,29 @@
         */
 
         /* AUFGABE 0: Selektieren Sie alle Elemente */
-        /* * { color: gold; } */
-
-        { color: gold; }  Alle Elemente der Farbe "Gold" selektiert  
+        /* * { color: gold; } 
         
 
-
+        
 
         /* AUFGABE 1: 1>Paragraph 1 in der ersten Section */
 
-        #sec1 class.1 {color: gold;}   Mit #sec1 und class.1 wählen wir die Section 1 aus 
+        #sec1 class-1 {color: gold;}   /*Mit #sec1 und class.1 wählen wir die Section 1 aus 
 
 
 
 
         /* AUFGABE 2: selektiere 3>Paragraph Z */
 
-        #sec2 class.2 {color: gold;}   Mit #sec2 und class.2 wählen wir die Section 3 aus 
+        #sec2 class-2 {color: gold;}   /*Mit #sec2 und class.2 wählen wir die Section 3 aus 
        
 
 
 
         /* AUFGABE 3: 2>Paragraph in erster und zweiter Section */
        
-       #sec1 class.2
-       #sec2 class.2 {color: gold;}   Mit dem #sec... und class.... selektieren wir die Sectionen 1 und 2 aus 
+       #sec1 class-2
+       #sec2 class-2 {color: gold;}   /*Mit dem #sec... und class.... selektieren wir die Sectionen 1 und 2 aus 
 
 
 
@@ -55,7 +53,7 @@
         /* AUFGABE 4: 3>Paragraph Z in der zweiten Section */
 
 
-         #sec2 class.2 {color: gold;}   Z in der zweiten Section ausgewählt 
+         #sec2 class-2 {color: gold;}   /*Z in der zweiten Section ausgewählt 
 
 
 
@@ -63,7 +61,7 @@
         /* AUFGABE 5: alle gruenen list items */
 
 
-        .green li {color: gold;}  Alle grünen list items ausgewält mit color gold
+        .green li {color: gold;}  /*Alle grünen list items ausgewält mit color gold
 
 
 
@@ -71,7 +69,7 @@
        
         /* AUFGABE 6: jeweils die ersten beiden list items */
 
-        ul li:nth-child (-n+2)  {color: gold;}   Der ul li:nth-child code ist selektiert die items die unselektiert sind...
+        li:first-child, li:nth-child(2) {color: gold;}  /*Der ul li:nth-child code ist selektiert die items die unselektiert sind...
 
 
 
@@ -80,9 +78,9 @@
         /* AUFGABE 7: jeweils die ersten beiden list items der blauen und gruenen section */
 
 
-        .blue li:nth-child (-n+2)
-        .green li:nth-child (-n+2)   {color: gold;}    Das gleiche Prinzip mit der Aufgabe 6 
-
+        #sec1 .blue li:nth-child(-n+2),
+            #sec3 .green li:nth-child(-n+2) { color: gold; }    /*Das gleiche Prinzip mit der Aufgabe 6 doch jz mit einem andere code
+    
 
 
 
@@ -90,9 +88,11 @@
         /* AUFGABE 8: Paragraphs in den ersten beiden Sections  */
 
 
-        #sec1  p,
-        #sec2  p,  {color: gold;}   Mit dem #sec... p die Sectionen ausgewählt
+        #sec1 p,
+        #sec2 p { color: gold; }    /*Mit dem #sec... p die Sectionen ausgewählt
 
+
+            
 
     Manche Aufgaben mit der Hilfe von der Seite gemacht: https://flukeout.github.io/
        
